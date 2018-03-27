@@ -1,0 +1,5 @@
+const CONSTANTS = {
+    REFRESH_PLANS: 'REFRESH_PLANS'
+}
+
+export default CONSTANTS
