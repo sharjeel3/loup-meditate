@@ -2,7 +2,7 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
 import { connect } from 'preact-redux'
-import refreshPlans from '../actions'
+import fetchActivities from '../actions'
 
 import Header from './header';
 import Home from '../routes/home';
@@ -53,7 +53,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
     onLoad: () => {
-        dispatch(refreshPlans({}))
+        dispatch(fetchActivities())
     }
 })
 

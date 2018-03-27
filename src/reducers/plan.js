@@ -1,8 +1,9 @@
-import CONSTANTS from '../global'
+import {CONSTANTS} from '../global'
 
 const defaultState = {
     loading: false,
-    plans: []
+    plans: [],
+    json: {}
 }
 
 const plan = (state = defaultState, action) => {
@@ -11,7 +12,8 @@ const plan = (state = defaultState, action) => {
             return {
                 ...state,
                 plans: action.plans,
-                loading: action.loading
+                loading: action.loading,
+                json: action.json
             }
         default:
             return state

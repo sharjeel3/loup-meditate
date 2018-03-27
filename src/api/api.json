@@ -1,0 +1,181 @@
+{
+  "success": true,
+  "result": {
+    "requestedWeek": 0,
+    "availabilities": [{
+      "week": -4,
+      "status": 1,
+      "title": "FEB 19 - 25",
+      "startDate": "2018-02-19T00:00:00+11:00",
+      "endDate": "2018-02-25T23:59:59+11:00"
+    }, {
+      "week": -3,
+      "status": 1,
+      "title": "FEB 26 - MAR 4",
+      "startDate": "2018-02-26T00:00:00+11:00",
+      "endDate": "2018-03-04T23:59:59+11:00"
+    }, {
+      "week": -2,
+      "status": 1,
+      "title": "MAR 5 - 11",
+      "startDate": "2018-03-05T00:00:00+11:00",
+      "endDate": "2018-03-11T23:59:59+11:00"
+    }, {
+      "week": -1,
+      "status": 1,
+      "title": "MAR 12 - 18",
+      "startDate": "2018-03-12T00:00:00+11:00",
+      "endDate": "2018-03-18T23:59:59+11:00"
+    }, {
+      "week": 0,
+      "status": 1,
+      "title": "MAR 19 - 25",
+      "startDate": "2018-03-19T00:00:00+11:00",
+      "endDate": "2018-03-25T23:59:59+11:00"
+    }, {
+      "week": 1,
+      "status": 1,
+      "title": "MAR 26 - APR 1",
+      "startDate": "2018-03-26T00:00:00+11:00",
+      "endDate": "2018-04-01T23:59:59+10:00"
+    }],
+    "tickedActivityIds": [],
+    "dailyActivities": [{
+      "day": "Mon",
+      "dayId": 0,
+      "date": "2018-03-19T00:00:00+11:00",
+      "isToday": false,
+      "status": 1,
+      "activities": [{
+        "id": 66201,
+        "courseStreamId": 847,
+        "courseId": 3426,
+        "contentType": 1,
+        "contentId": 3323,
+        "onHold": false,
+        "day": 1,
+        "date": "2018-03-19T00:00:00+00:00",
+        "title": "Breakfast",
+        "summary": "",
+        "snippet": "5 mins",
+        "serves": 1.0,
+        "sort": 200,
+        "servingSize": 1,
+        "isLeftOver": false,
+        "isFeatured": false,
+        "isCompletable": true,
+        "isReplacement": false,
+        "contentTitle": "Apple Cinnamon Smoothie",
+        "contentSpecialFiles": "landdesk-original-applecinnamonsmoothie-landscape.jpg,landlist-original-applecinnamonsmoothie-landscape.jpg,portdesk-original-applecinnamonsmoothie-portrait.jpg,portlist-original-applecinnamonsmoothie-portrait.jpg",
+        "contentUrlPartial": "apple-cinnamon-smoothie",
+        "landscapeMobileImage": null,
+        "landscapeDesktopImage": {
+          "fileName": "landdesk-original-applecinnamonsmoothie-landscape.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3323/images/landdesk-original-applecinnamonsmoothie-landscape.jpg",
+          "width": 924,
+          "height": 631
+        },
+        "portraitMobileImage": null,
+        "portraitDesktopImage": {
+          "fileName": "portdesk-original-applecinnamonsmoothie-portrait.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3323/images/portdesk-original-applecinnamonsmoothie-portrait.jpg",
+          "width": 448,
+          "height": 577
+        }
+      }, {
+        "id": 59572,
+        "courseStreamId": 859,
+        "courseId": 3426,
+        "contentType": 5,
+        "contentId": 3552,
+        "onHold": false,
+        "day": 1,
+        "date": "2018-03-19T00:00:00+00:00",
+        "title": "Workout",
+        "summary": "",
+        "snippet": "20-40 mins",
+        "serves": 0.0,
+        "sort": 1000,
+        "servingSize": 1,
+        "isLeftOver": false,
+        "isFeatured": false,
+        "isCompletable": true,
+        "isReplacement": false,
+        "contentTitle": "Pump it up! Get arms to die for",
+        "contentSpecialFiles": "landmob-swiss-ball-dumbbell-chest-press-power.jpg,landdesk-swiss-ball-dumbbell-chest-press-power.jpg,portmob-swiss-ball-dumbbell-chest-press-power.jpg,portdesk-swiss-ball-dumbbell-chest-press-power.jpg",
+        "contentUrlPartial": "20180319-workout",
+        "landscapeMobileImage": {
+          "fileName": "landmob-swiss-ball-dumbbell-chest-press-power.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3552/images/landmob-swiss-ball-dumbbell-chest-press-power.jpg",
+          "width": 800,
+          "height": 450
+        },
+        "landscapeDesktopImage": {
+          "fileName": "landdesk-swiss-ball-dumbbell-chest-press-power.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3552/images/landdesk-swiss-ball-dumbbell-chest-press-power.jpg",
+          "width": 1000,
+          "height": 562
+        },
+        "portraitMobileImage": {
+          "fileName": "portmob-swiss-ball-dumbbell-chest-press-power.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3552/images/portmob-swiss-ball-dumbbell-chest-press-power.jpg",
+          "width": 533,
+          "height": 800
+        },
+        "portraitDesktopImage": {
+          "fileName": "portdesk-swiss-ball-dumbbell-chest-press-power.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3552/images/portdesk-swiss-ball-dumbbell-chest-press-power.jpg",
+          "width": 900,
+          "height": 1350
+        }
+      }, {
+        "id": 66513,
+        "courseStreamId": 859,
+        "courseId": 3426,
+        "contentType": 104,
+        "contentId": 3620,
+        "onHold": false,
+        "day": 3,
+        "date": "2018-03-21T00:00:00+00:00",
+        "title": "Sleep Meditation",
+        "summary": "",
+        "snippet": "8 mins",
+        "serves": 0.0,
+        "sort": 1100,
+        "servingSize": 1,
+        "isLeftOver": false,
+        "isFeatured": false,
+        "isCompletable": true,
+        "isReplacement": false,
+        "contentTitle": "Find some clarity at a calm rock pool",
+        "contentSpecialFiles": "landmob-sky-rockpool-clarity-b.jpg,landdesk-sky-rockpool-clarity-b.jpg,portmob-sky-rockpool-clarity-b.jpg,portdesk-sky-rockpool-clarity-b.jpg",
+        "contentUrlPartial": "find-some-clarity-at-a-calm-rock-pool",
+        "contentAudioFile": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3620/esf-sleep-rock-pool-clarity.mp3",
+        "landscapeMobileImage": {
+          "fileName": "landmob-sky-rockpool-clarity-b.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3620/images/landmob-sky-rockpool-clarity-b.jpg",
+          "width": 800,
+          "height": 450
+        },
+        "landscapeDesktopImage": {
+          "fileName": "landdesk-sky-rockpool-clarity-b.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3620/images/landdesk-sky-rockpool-clarity-b.jpg",
+          "width": 1000,
+          "height": 562
+        },
+        "portraitMobileImage": {
+          "fileName": "portmob-sky-rockpool-clarity-b.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3620/images/portmob-sky-rockpool-clarity-b.jpg",
+          "width": 533,
+          "height": 800
+        },
+        "portraitDesktopImage": {
+          "fileName": "portdesk-sky-rockpool-clarity-b.jpg",
+          "url": "https://c7823c74fcf5919154bf-dc9422fbfab3e488dbd72b998b6187ac.ssl.cf4.rackcdn.com/content/4000/3620/images/portdesk-sky-rockpool-clarity-b.jpg",
+          "width": 900,
+          "height": 1350
+        }
+      }]
+    }]
+  }
+}
