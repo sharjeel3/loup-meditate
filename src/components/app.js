@@ -37,6 +37,7 @@ class App extends Component {
 	}
 
 	render() {
+		const { json } = this.props
 		return (
 			<div id="app">
 				<UIProvider>
@@ -44,7 +45,7 @@ class App extends Component {
 						<Home path="/" />
 						<Profile path="/profile/" user="me" />
 						<Profile path="/profile/:user" />
-                        <Activity path="/activities" />
+                        <Activity path="/activities" json={json} />
 					</Router>
                 </UIProvider>
 			</div>
@@ -53,7 +54,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    loading: state.plan.loading
+    json: state.plan.json
 })
 
 const mapDispatchToProps = (dispatch) => ({
