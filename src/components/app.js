@@ -4,9 +4,10 @@ import { Router } from 'preact-router';
 import { connect } from 'preact-redux'
 import fetchActivities from '../actions'
 
-import Header from './header';
+//import Header from './header';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
+import Activity from '../routes/activity';
 // import Home from 'async!../routes/home';
 // import Profile from 'async!../routes/profile';
 
@@ -43,6 +44,7 @@ class App extends Component {
 						<Home path="/" />
 						<Profile path="/profile/" user="me" />
 						<Profile path="/profile/:user" />
+                        <Activity path="/activities" />
 					</Router>
                 </UIProvider>
 			</div>

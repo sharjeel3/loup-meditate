@@ -3,7 +3,6 @@ import styles from './Button.scss'
 import classnames from 'classnames'
 
 const Button = ({ children, ...props }) => {
-    console.log(props)
     const { className, ...restProps } = props
     const combinedProps = {
         className: classnames(styles.button, className),
