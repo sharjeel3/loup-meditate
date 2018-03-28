@@ -10,6 +10,8 @@ import Profile from '../routes/profile';
 // import Home from 'async!../routes/home';
 // import Profile from 'async!../routes/profile';
 
+import {UIProvider} from './UI'
+
 if (module.hot) {
 	require('preact/debug');
 }
@@ -36,12 +38,13 @@ class App extends Component {
 	render() {
 		return (
 			<div id="app">
-				<Header />
-				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
-				</Router>
+				<UIProvider>
+					<Router onChange={this.handleRoute}>
+						<Home path="/" />
+						<Profile path="/profile/" user="me" />
+						<Profile path="/profile/:user" />
+					</Router>
+                </UIProvider>
 			</div>
 		);
 	}

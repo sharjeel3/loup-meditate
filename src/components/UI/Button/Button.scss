@@ -1,0 +1,25 @@
+@import "../theme/theme";
+
+.button {
+  font-weight: $font-medium;
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+  text-align: center;
+  padding: 0 $button-padding;
+  box-shadow: 0 1px fade($black, 70%);
+  border: 0;
+  border-radius: 2px;
+  transition:
+          background-color 0.2s,
+          transform 0.2s cubic-bezier(0.02, 1.505, 0.745, 1.235);
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: $green;
+  color: $white;
+  font-size: $button-font-size;
+  line-height: $button-height;
+  height: $button-height;
+}
