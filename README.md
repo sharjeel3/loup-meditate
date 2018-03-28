@@ -54,7 +54,7 @@ The code is divided into directories/logical components to keep it structured. Y
 * **containers:** These will be responsible for carrying more business logic and handling async action creators.    
 * **global:** It has Constants and anything we want to reuse across project.   
 * **reducers:** It contains Redux reducers for a global state management    
-* **routes:** It contains components mapped to preact router's routes. Routes components may included other components or containers.   
+* **routes:** It contains components mapped to preact router's routes. Routes components may include other components or containers.   
 * **style:** The global app styles should go here.    
 * **test:** Unit testing    
 
