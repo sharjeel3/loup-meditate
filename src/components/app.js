@@ -21,6 +21,18 @@ class App extends Component {
 
     constructor(props) {
         super(props)
+		this.helmet = {
+        	link: [
+            	{
+            		rel: "stylesheet",
+					href: "https://use.typekit.net/laf1hgt.css"
+            	},
+                {
+                    rel: "stylesheet",
+                    href: "https://fonts.googleapis.com/css?family=Montserrat:600,700"
+                }
+    		]
+		}
     }
 
 	/** Gets fired when the route changes.
@@ -40,7 +52,7 @@ class App extends Component {
 		const { json } = this.props
 		return (
 			<div id="app">
-				<UIProvider>
+				<UIProvider helmet={this.helmet}>
 					<Router onChange={this.handleRoute}>
 						<Home path="/" />
 						<Profile path="/profile/" user="me" />

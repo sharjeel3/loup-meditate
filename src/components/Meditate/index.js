@@ -11,11 +11,11 @@ const getTitle = (title) => {
 const Meditate = ({content}) => {
     console.log('content2', content)
     return <div>
-        <Card className={styles.root1} style={{color: 'white', ...getBackgroundImgStyle(content.landscapeMobileImage.url)}}>
+        <Card className={styles.root} style={{...getBackgroundImgStyle(content.landscapeMobileImage.url)}}>
             <Section>
-                <Text>MEDITATION</Text>
-                <div>
-                    <Text>{getTitle(content.title)}</Text>
+                <Text className={styles.activityTitle}>MEDITATION</Text>
+                <div className={styles.activityTitleContainer}>
+                    <Text className={styles.contentTitle}>{getTitle(content.title)}</Text>
                     <div>
                         <div>heart</div>
                         <div>
@@ -27,7 +27,7 @@ const Meditate = ({content}) => {
                     </div>
                 </div>
                 <div>
-                    <Text>Meditation Track</Text>
+                    <Text class={styles.trackType}>Meditation Track</Text>
                     <Text>read before you start></Text>
                 </div>
                 <div>
