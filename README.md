@@ -47,7 +47,7 @@ npm run test
 
 ## Code Structure 
 The code is divided into directories/logical components to keep it structured. You will find following directories in `src` folder found at the root of the repository.
-* **actions:** It contains anything related to Action creators or Aysnc updates
+* **actions:** It contains anything related to Action creators or Async updates
 * **api:** It contains sample API data   
 * **assets:** General public assets    
 * **components:** It contains wide range of UI/View components. It has a dedicated component that bundles all the UI/theme components. UI component is the one that can be enhanced and converted to a standard styleguide. Majority of the these components don't carry business logic.    
