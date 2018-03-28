@@ -8,8 +8,17 @@ npm start
 
 ```
 
-## All CLI Commands
+## What I have done
+I have focused initially on creating the right base for this project. This is done it in a way that we can build on top of it in future. Whether it is more UI components or new views, we should be sweet with scaling the application. More details about the project are below. 
 
+## What is in progress
+Audio Player component and some UI changes 
+
+## The Future
+I will work more on the Audio Player, responsive changes and unit testing. The standard UI updates is an ongoing task.\
+I can resume this project further at Loup later on.   
+
+## All CLI Commands
 This project is bootstrapped using preact CLI. Following commands require that you have installed preact CLI globally.
 
 ``` bash
