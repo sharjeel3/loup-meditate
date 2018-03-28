@@ -1,6 +1,6 @@
 import { Component } from 'preact';
 import style from './style';
-import {PageBlock, Card, Section} from '../../components/UI'
+import {PageBlock} from '../../components/UI'
 import {ACTIVITY_CONTENT_TYPES} from "../../global"
 
 import Workout from '../../components/Workout'
@@ -45,13 +45,9 @@ export default class Activity extends Component {
         return (
             <PageBlock>
                 <div className={style.root}>
-                    <Card>
-                        <Section>
-                            <div>
-                                {this.getActivityComponents(activities)}
-                            </div>
-                        </Section>
-                    </Card>
+                    <div>
+                        {this.getActivityComponents(activities)}
+                    </div>
                 </div>
             </PageBlock>
         );

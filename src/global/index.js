@@ -12,5 +12,9 @@ export const ACTIVITY_CONTENT_TYPES = [
     104
 ]
 
-
-
+export const getBackgroundImgStyle = (image) => {
+    // TODO: Handle responsive images
+    return {
+        backgroundImage: 'url(' + image + ')'
+    }
+}
