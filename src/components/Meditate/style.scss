@@ -1,7 +1,31 @@
 @import "../UI/theme/theme";
 
 .root {
-  border-radius: 20px;
+  text-transform: uppercase;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  &:after {
+    background-color: rgba(250, 250, 250, 0.45);
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  > div {
+    padding: 40px 25px 20px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .activityTitle {
@@ -9,20 +33,69 @@
   font-weight: $font-semibold;
   font-size: 15px;
   letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 .contentTitle {
   font-size: 80px;
+  line-height: 96px;
   font-family: $font-secondary;
-  text-transform: uppercase;
+  width: 50%;
 }
 
 .activityTitleContainer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
 }
 
 .trackType {
   font-size: 28px;
   letter-spacing: 2px;
+  font-family: $font-secondary;
+  line-height: 34px;
+}
+
+.heart {
+  display: inline-block;
+  border: 3.6px solid rgba(34,34,34,0.36);
+  border-radius: 100%;
+  padding: 10px 13px;
+  margin-right: 14px;
+  svg {
+    fill: $green;
+  }
+}
+
+.karmaContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.karmaNumber {
+  color: $green;
+  display: block;
+  font-family: $font-secondary;
+  font-weight: bold;
+  font-size: 29px;
+  letter-spacing: 2px;
+}
+
+.karmaDesc {
+  color: rgba(34,34,34,0.36);
+  font-size: 11px;
+}
+
+.moreLink{
+  letter-spacing: 3.7px;
+}
+
+.playerFooter {
+  font-size: 14px;
+  color: $grey-dark;
+  opacity: 0.5;
+  font-weight: $font-semibold;
 }

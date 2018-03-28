@@ -15,6 +15,9 @@ $typo-row-span: 5;
 $standard-typo-scale: 1.6;
 $standard-typo-scale-mobile: 1.7;
 $standard-typo-weight: $font-regular;
+$standard-link-scale: 1.5;
+$standard-link-scale-mobile: 1.5;
 
 $button-font-size: $base-font-size * $standard-typo-scale-mobile + px;
 $button-height: $typo-row-span * $grid-row-height;
+$link-font-size: $base-font-size * $standard-link-scale-mobile + px;

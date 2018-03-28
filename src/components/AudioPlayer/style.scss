@@ -1,0 +1,18 @@
+@import "../UI/theme/theme";
+
+.root {
+  background-color: white;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  p {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    color: $grey-dark;
+    opacity: 0.5;
+  }
+}

@@ -1,7 +1,8 @@
 import preact from 'preact'
 import styles from './style.scss'
-import {PageBlock, Card, Section, Text} from '../../components/UI'
+import {PageBlock, Card, Section, Text, TextLink, HeartIcon} from '../../components/UI'
 import {getBackgroundImgStyle} from '../../global'
+import AudioPlayer from '../AudioPlayer'
 
 const getTitle = (title) => {
     const newTitle = title.slice()
@@ -11,28 +12,30 @@ const getTitle = (title) => {
 const Meditate = ({content}) => {
     console.log('content2', content)
     return <div>
-        <Card className={styles.root} style={{...getBackgroundImgStyle(content.landscapeMobileImage.url)}}>
+        <Card className={styles.root} style={{height: 450, ...getBackgroundImgStyle(content.portraitMobileImage.url)}}>
             <Section>
                 <Text className={styles.activityTitle}>MEDITATION</Text>
                 <div className={styles.activityTitleContainer}>
                     <Text className={styles.contentTitle}>{getTitle(content.title)}</Text>
-                    <div>
-                        <div>heart</div>
+                    <div className={styles.karmaContainer}>
+                        <div>
+                            <HeartIcon className={styles.heart}/>
+                        </div>
                         <div>
                             <Text>
-                                <span>98</span>
-                                <span>Karma points earned</span>
+                                <span className={styles.karmaNumber}>98</span>
+                                <span className={styles.karmaDesc}>Karma points earned</span>
                             </Text>
                         </div>
                     </div>
                 </div>
                 <div>
                     <Text class={styles.trackType}>Meditation Track</Text>
-                    <Text>read before you start></Text>
+                    <TextLink className={styles.moreLink} href={'/SOME_PATH/' + content.contentUrlPartial}>read before you start></TextLink>
                 </div>
-                <div>
-                    <Card></Card>
-                    <div>{content.snippet}</div>
+                <div style={{marginTop: 'auto'}}>
+                    <AudioPlayer title={content.contentTitle}></AudioPlayer>
+                    <div className={styles.playerFooter}>{content.snippet}</div>
                 </div>
             </Section>
         </Card>
