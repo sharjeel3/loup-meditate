@@ -16,7 +16,7 @@ const HeartIcon = ({ children, ...props }) => {
         className: classnames(styles.root, className),
         ...restProps
     }
-    return <div {...combinedProps}><Icon/></div>
+    return <span {...combinedProps}><Icon/></span>
 }
 
 export default HeartIcon

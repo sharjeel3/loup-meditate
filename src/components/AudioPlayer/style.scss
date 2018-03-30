@@ -16,3 +16,40 @@
     opacity: 0.5;
   }
 }
+
+.controlsContainer {
+  display: flex;
+  > div {
+    flex: 1 1;
+  }
+}
+
+.playNextContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  > span {
+    display: inline-block;
+  }
+}
+
+.playButton {
+  border-radius: 100%;
+  background-color: #F4F4F4;
+  padding: 16px 16px;
+  box-shadow: 0 5px 22px 0 rgba(0,0,0,0.4);
+  svg {
+    width: 18px;
+    height: 16px;
+    vertical-align: middle;
+  }
+}
+
+.nextButton {
+  svg {
+    width: 18px;
+    height: 16px;
+    vertical-align: middle;
+  }
+}
+

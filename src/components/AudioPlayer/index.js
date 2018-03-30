@@ -1,6 +1,6 @@
 import preact from 'preact'
 import styles from './style.scss'
-import {PageBlock, Card, Section, Text} from '../../components/UI'
+import {Card, Section, Text, ProgressBar, PlayNextIcon, PlayPauseIcon} from '../../components/UI'
 
 const AudioPlayer = ({children, ...props}) => {
     const {title} = props
@@ -10,7 +10,15 @@ const AudioPlayer = ({children, ...props}) => {
                 <Text>{title}</Text>
                 <Text>2:34</Text>
             </div>
-            {children}
+            <div className={styles.controlsContainer}>
+                <div className={styles.playNextContainer}>
+                    <PlayPauseIcon className={styles.playButton}/>
+                    <PlayNextIcon className={styles.nextButton}/>
+                </div>
+                <div>
+                    <ProgressBar/>
+                </div>
+            </div>
         </Section>
     </Card>
 }
