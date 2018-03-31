@@ -34,7 +34,7 @@ const Meditate = ({content}) => {
                     <TextLink className={styles.moreLink} href={'/SOME_PATH/' + content.contentUrlPartial}>read before you start></TextLink>
                 </div>
                 <div style={{marginTop: 'auto'}}>
-                    <AudioPlayer title={content.contentTitle}></AudioPlayer>
+                    <AudioPlayer title={content.contentTitle} fileUrl={content.contentAudioFile}></AudioPlayer>
                     <div className={styles.playerFooter}>{content.snippet}</div>
                 </div>
             </Section>

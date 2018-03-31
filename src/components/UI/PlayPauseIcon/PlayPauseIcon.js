@@ -46,12 +46,20 @@ class PlayPauseIcon extends Component{
     }
 
     render() {
-        const { className, ...restProps } = this.props
+        const { className, isPlaying, ...restProps } = this.props
         const combinedProps = {
             className: classnames(styles.root, className),
             ...restProps
         }
-        return <span {...combinedProps}><PlayIcon/></span>
+        return <span {...combinedProps}>
+            {
+                isPlaying
+                ?
+                    <PauseIcon/>
+                :
+                    <PlayIcon/>
+            }
+        </span>
     }
 }
 
