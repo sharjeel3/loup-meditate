@@ -1,5 +1,11 @@
 @import "../theme/theme";
 
 .root {
+  audio {
+    display: none;
+  }
+}
 
+.svg {
+  transform: translateY(7px)
 }

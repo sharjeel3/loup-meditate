@@ -86,6 +86,16 @@ class AudioPlayer extends Component {
         }
     }
 
+    progressBarForward = (data) => {
+        let newTime = this.state.totalDuration * data.currentStep / data.totalSteps
+        if(newTime < this.state.totalDuration) {
+            this.audio.currentTime = newTime
+            this.setState({
+                currentTime: newTime
+            })
+        }
+    }
+
     render() {
         const {children, ...props} = this.props
         const {title, fileUrl} = props
@@ -96,7 +106,7 @@ class AudioPlayer extends Component {
                     <Text className={styles.timeDuration}>{this.getTimeInMinutes(this.state.currentTime)}</Text>
                 </div>
                 <div>
-                    <audio controls ref={this.storeAudioReference}>
+                    <audio ref={this.storeAudioReference}>
                         <source src={fileUrl}/>
                         Please use a modern web browser
                     </audio>
@@ -107,7 +117,7 @@ class AudioPlayer extends Component {
                         <PlayNextIcon onClick={this.fastForward} className={styles.nextButton}/>
                     </div>
                     <div>
-                        <ProgressBar/>
+                        <ProgressBar progressCb={this.progressBarForward}/>
                     </div>
                 </div>
             </Section>
