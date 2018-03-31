@@ -77,7 +77,7 @@ class AudioPlayer extends Component {
     }
 
     fastForward = () => {
-        let newTime = this.state.currentTime + 20
+        let newTime = this.state.currentTime + 15
         if(newTime < this.state.totalDuration) {
             this.audio.currentTime = newTime
             this.setState({
@@ -117,7 +117,7 @@ class AudioPlayer extends Component {
                         <PlayNextIcon onClick={this.fastForward} className={styles.nextButton}/>
                     </div>
                     <div>
-                        <ProgressBar progressCb={this.progressBarForward}/>
+                        <ProgressBar progressCb={this.progressBarForward} duration={this.state.totalDuration} currentTime={this.state.currentTime} />
                     </div>
                 </div>
             </Section>
