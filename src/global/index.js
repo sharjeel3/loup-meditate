@@ -18,3 +18,9 @@ export const getBackgroundImgStyle = (image) => {
         backgroundImage: 'url(' + image + ')'
     }
 }
+
+export const getTimeInMinutes = (duration) => {
+    let minutes = Math.floor(duration/60)
+    let seconds = Math.floor(duration - minutes * 60)
+    return minutes + ":" + (seconds < 10  ? '0' : '') + seconds
+}
