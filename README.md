@@ -26,7 +26,7 @@ I have paused working on it at the moment.
 ## The Future
 There are few areas I would like to touch in future. These are the things usually discussed at the start of the projects but I am mentioning them to let you know that some areas of app require more updates. 
 
-* Design discussion and scaling the app between devices. I am particularly interested in finding out how it should appear on older Mobile devices. The player controls/ typography would need some adjustments based on this. Currently it is working better on iPhone 8. 
+* Design discussion and scaling the app between devices. I am particularly interested in finding out how it should appear on older Mobile devices. The player controls/ typography would need some adjustments based on this. Currently it is working better on iPhone 8 Plus. 
 * One or two API response keys required changes to the data before it can be rendered. This can be discussed.
 * Fonts may be hosted locally because including them using Typekit introduces a glitch on load. 
 * Main background image for card needs to be changed to suit overall design. 
