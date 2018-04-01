@@ -1,5 +1,5 @@
 import { Component } from 'preact';
-import style from './style';
+import styles from './style';
 import {PageBlock} from '../../components/UI'
 import {ACTIVITY_CONTENT_TYPES} from "../../global"
 
@@ -44,8 +44,8 @@ export default class Activity extends Component {
         const activities = this.getActivitiesJson(result);
         return (
             <PageBlock>
-                <div className={style.root}>
-                    <div>
+                <div className={styles.root}>
+                    <div className={styles.activityContainer}>
                         {this.getActivityComponents(activities)}
                     </div>
                 </div>

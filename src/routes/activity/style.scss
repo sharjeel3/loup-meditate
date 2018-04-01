@@ -1,3 +1,12 @@
 .root {
   padding-top: 72px;
 }
+
+.activityContainer {
+  @media (min-width: 1024px) {
+    display: flex;
+    > div {
+      flex-basis: 50%;
+    }
+  }
+}

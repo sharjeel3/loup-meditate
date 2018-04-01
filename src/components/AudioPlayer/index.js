@@ -41,9 +41,6 @@ class AudioPlayer extends Component {
 
     componentDidMount() {
         this.events()
-        setTimeout(()=>{
-            //this.audio.currentTime = this.audio.currentTime + 200
-        }, 2000)
     }
 
     componentDidUpdate() {
@@ -56,21 +53,13 @@ class AudioPlayer extends Component {
                 totalDuration: this.audio.duration
             })
         })
-        this.audio.addEventListener('play', () => {
-            //console.log('play event')
-        })
-        this.audio.addEventListener('playing', () => {
-            //console.log('playing event')
-        })
         this.audio.addEventListener('timeupdate', () => {
-            //console.log('timeupdate event')
             let newTime = this.audio.currentTime
             this.setState({
                 currentTime: newTime
             })
         })
         this.audio.addEventListener('ended', () => {
-            //console.log('ended event')
             this.setState({
                 isPlaying: false
             })
