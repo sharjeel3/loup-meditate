@@ -12,7 +12,7 @@ const getTitle = (title) => {
 const Meditate = ({content}) => {
     console.log('content2', content)
     return <div>
-        <Card className={styles.root} style={{height: 450, ...getBackgroundImgStyle(content.portraitMobileImage.url)}}>
+        <Card className={styles.root} style={{height: 490, ...getBackgroundImgStyle(content.portraitMobileImage.url)}}>
             <Section>
                 <Text className={styles.activityTitle}>MEDITATION</Text>
                 <div className={styles.activityTitleContainer}>
@@ -35,7 +35,6 @@ const Meditate = ({content}) => {
                 </div>
                 <div style={{marginTop: 'auto'}}>
                     <AudioPlayer title={content.contentTitle} fileUrl={content.contentAudioFile}></AudioPlayer>
-                    <div className={styles.playerFooter}>{content.snippet}</div>
                 </div>
             </Section>
         </Card>
