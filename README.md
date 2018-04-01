@@ -9,14 +9,28 @@ npm start
 ```
 
 ## What I have done
-I have focused initially on creating the right base for this project. This is done it in a way that we can build on top of it in future. Whether it is more UI components or new views, we should be sweet with scaling the application. More details about the project are below. 
+I have focused initially on creating the right base for this project. This is done it in a way that we can build on top of it in future. Whether it is more UI components or new views, we should be sweet with scaling the application. \
+I have worked on following areas in general: 
+* Overall base for the application 
+* Styleguide / UI components
+* Meditate View for the app
+* Audio player using HTML5/DOM API 
+* Progress bar control using D3.js 
+
+
+More details about the project are below. 
 
 ## What is in progress
-Audio Player component and some UI changes 
+I have paused working on it at the moment.  
 
 ## The Future
-I will work more on the Audio Player, responsive changes and unit testing. The standard UI updates is an ongoing task.\
-I can resume this project further at Loup later on.   
+There are few areas I would like to touch in future. These are the things usually discussed at the start of the projects but I am mentioning them to let you know that some areas of app require more updates. 
+
+* Design discussion and scaling the app between devices. I am particularly interested in finding out how it should appear on older Mobile devices. The player controls/ typography would need some adjustments based on this. Currently it is working better on iPhone 8. 
+* One or two API response keys required changes to the data before it can be rendered. This can be discussed.
+* Fonts may be hosted locally because including them using Typekit introduces a glitch on load. 
+* Main background image for card needs to be changed to suit overall design. 
+* The background SVG shape for play/forward icon is not as per design. This can be replaced easily if I can get SVG as per designs.
 
 ## All CLI Commands
 This project is bootstrapped using preact CLI. Following commands require that you have installed preact CLI globally.
@@ -44,6 +58,7 @@ npm run test
 * Thunk
 * SCSS
 * Helmet
+* D3.js
 
 ## Code Structure 
 The code is divided into directories/logical components to keep it structured. You will find following directories in `src` folder found at the root of the repository.
