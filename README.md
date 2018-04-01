@@ -31,6 +31,7 @@ There are few areas I would like to touch in future. These are the things usuall
 * Fonts may be hosted locally because including them using Typekit introduces a glitch on load. 
 * Main background image for card needs to be changed to suit overall design. 
 * The background SVG shape for play/forward icon is not as per design. This can be replaced easily if I can get SVG as per designs.
+* Unit testing 
 
 ## All CLI Commands
 This project is bootstrapped using preact CLI. Following commands require that you have installed preact CLI globally.
