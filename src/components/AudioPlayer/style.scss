@@ -48,6 +48,9 @@
     height: 16px;
     vertical-align: middle;
   }
+  @media (max-width: 399px) {
+    margin-right: 5px;
+  }
 }
 
 .nextButton {
@@ -56,6 +59,9 @@
     width: 18px;
     height: 16px;
     vertical-align: middle;
+  }
+  @media (max-width: 399px) {
+    margin-left: 5px;
   }
 }
 
